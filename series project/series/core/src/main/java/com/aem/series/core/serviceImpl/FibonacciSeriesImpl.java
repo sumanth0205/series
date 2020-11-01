@@ -1,7 +1,9 @@
 package com.aem.series.core.serviceImpl;
 
-import com.aem.series.core.service.FibonacciSeries;
+import org.osgi.service.component.annotations.Component;
 
+import com.aem.series.core.service.FibonacciSeries;
+@Component(service=FibonacciSeries.class)
 public class FibonacciSeriesImpl implements FibonacciSeries{
 
 	
